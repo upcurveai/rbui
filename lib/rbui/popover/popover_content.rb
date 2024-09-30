@@ -3,7 +3,7 @@
 module RBUI
   class PopoverContent < Base
     def view_template(&)
-      template_tag(data: {rbui__popover_target: "content"}) do
+      template(data: {rbui__popover_target: "content"}) do
         div(**attrs, &)
       end
     end

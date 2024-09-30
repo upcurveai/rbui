@@ -55,7 +55,7 @@ module RBUI
       div(**attrs) do
         div(class: "after:content-none") do
           pre do
-            unsafe_raw FORMATTER.format(
+            raw FORMATTER.format(
               lexer.lex(@code)
             )
           end

@@ -17,7 +17,7 @@ module RBUI
     end
 
     def view_template
-      template_tag(data: {rbui__dialog_target: "content"}) do
+      template(data: {rbui__dialog_target: "content"}) do
         div(data_controller: "rbui--dialog") do
           backdrop
           div(**attrs) do

@@ -10,7 +10,7 @@ module RBUI
 
     def default_attrs
       {
-        data: {controller: "rbui--sheet", action: 'keydown.esc->rbui--sheet-content#close'}
+        data: {controller: "rbui--sheet"}
       }
     end
   end

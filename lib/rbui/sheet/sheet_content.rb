@@ -17,7 +17,7 @@ module RBUI
 
     def view_template(&block)
       template(data: {rbui__sheet_target: "content"}) do
-        div(data: {controller: "rbui--sheet-content", action: 'keydown.esc->rbui--sheet-content#close'}) do
+        div(data: {controller: "rbui--sheet-content", action: 'keydown.esc@document->rbui--sheet-content#close'}) do
           backdrop
           div(**attrs) do
             block&.call
